@@ -19,9 +19,9 @@ Working Principle
 
 ✅ Operations in O(1) Time Complexity
   -  get(key) → O(1) using OrderedDict (dict lookup is O(1), and move operation is O(1)).
-  -  put(key, value) → O(1) using OrderedDict (insert/move to end is O(1), and removal of LRU item is O(1)).
+  -  put(key, value) → O(1) using OrderedDict (insert/move to end is O(1), and removal of LRU item is O(1)).  <br/>
 ✅ Efficient Removal of LRU Items
-  -  `popitem(last=False)` removes the first inserted (least recently used) element in O(1).
+  -  `popitem(last=False)` removes the first inserted (least recently used) element in O(1).  <br/>
 ✅ Maintains Order of Access
   -  `move_to_end(key)` keeps the most recently used items at the end.
 
