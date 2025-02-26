@@ -40,6 +40,7 @@ def play_game():
         
         if board[row][col] != " ":
             print("Invalid move. Try again.")
+            print(get_available_moves(board))
             continue
         
         board[row][col] = current_player
