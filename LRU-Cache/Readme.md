@@ -46,14 +46,15 @@ While OrderedDict is simple, an alternative approach is using a Doubly Linked Li
 
 ##  How This Achieves O(1) Operations?
 
-|  Operation	| Time Complexity |	Why? | <br/>
-|  :---:  |  :---:  |  :---:  | <br/>
-|  get(key)	|  O(1)	|  HashMap lookup + moving node in DLL  | <br/>
-|  :---:  |  :---:  |  :---:  | <br/>
-|  put(key, value) |	O(1)	|  HashMap insert + adding/removing DLL node  | <br/>
-|  :---:  |  :---:  |  :---:  | <br/>
-|  evict LRU	|  O(1)	|  Remove first node from DLL  | <br/>
-|  :---:  |  :---:  |  :---:  |
+|        :---:        |             :---:            |                       :---:                 | <br/>
+|       Operation	    |       Time Complexity        |                    	Why?                   | <br/>
+|        :---:        |             :---:            |                       :---:                 | <br/>
+|      get(key)	      |              O(1)	           |    HashMap lookup + moving node in DLL      | <br/>
+|        :---:        |             :---:            |                       :---:                 | <br/>
+|    put(key, value)  |	            O(1)	           |  HashMap insert + adding/removing DLL node  | <br/>
+|        :---:        |             :---:            |                       :---:                 | <br/>
+|      evict LRU	    |             O(1)	           |           Remove first node from DLL        | <br/>
+|        :---:        |             :---:            |                       :---:                 | <br/>
 
 
 ##  Why Doubly Linked List?
@@ -65,10 +66,10 @@ While OrderedDict is simple, an alternative approach is using a Doubly Linked Li
   -  Direct lookup in O(1) instead of searching through a list.
 
 #  Comparison of Both Approaches
-
-|  Approach  |	Pros  |	Cons  | <br/>
-|  :---:  |  :---:  |  :---:  |  <br/>
-|  OrderedDict  |	Simple, built-in, optimized for LRU  |	Uses extra memory for internal ordering  |  <br/>
-|  :---:  |  :---:  |  :---:  |  <br/>
-|  DLL + HashMap  |	True O(1) performance, custom implementation  |  	More complex to implement  |  <br/>
-|  :---:  |  :---:  |  :---:  |  <br/>
+|        :---:        |                       :---:                |                           :---:                   | <br/>
+|        Approach     |	                      Pros                 |	                        Cons                     | <br/>
+|        :---:        |                       :---:                |                           :---:                   | <br/>
+|      OrderedDict    |	    Simple, built-in, optimized for LRU    |	    Uses extra memory for internal ordering      |  <br/>
+|        :---:        |                       :---:                |                           :---:                   | <br/>
+|      DLL + HashMap  |True O(1) performance, custom implementation|  	        More complex to implement              |  <br/>
+|        :---:        |                       :---:                |                           :---:                   | <br/>
