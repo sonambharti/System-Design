@@ -47,13 +47,13 @@ While OrderedDict is simple, an alternative approach is using a Doubly Linked Li
 ##  How This Achieves O(1) Operations?
 
 |  Operation	| Time Complexity |	Why? | <br/>
-|  ___  |  ___  |  ___  | <br/>
+|  :---:  |  :---:  |  :---:  | <br/>
 |  get(key)	|  O(1)	|  HashMap lookup + moving node in DLL  | <br/>
-|  ___  |  ___  |  ___  | <br/>
+|  :---:  |  :---:  |  :---:  | <br/>
 |  put(key, value) |	O(1)	|  HashMap insert + adding/removing DLL node  | <br/>
-|  ___  |  ___  |  ___  | <br/>
+|  :---:  |  :---:  |  :---:  | <br/>
 |  evict LRU	|  O(1)	|  Remove first node from DLL  | <br/>
-|  ___  |  ___  |  ___  |
+|  :---:  |  :---:  |  :---:  |
 
 
 ##  Why Doubly Linked List?
@@ -66,10 +66,9 @@ While OrderedDict is simple, an alternative approach is using a Doubly Linked Li
 
 #  Comparison of Both Approaches
 
-|  Approach  |	Pros  |	Cons  |
-|  ___  |  ___  |  ___  |
-|  OrderedDict  |	Simple, built-in, optimized for LRU  |	Uses extra memory for internal ordering  |
-|  ___  |  ___  |  ___  |
-|  DLL + HashMap  |	True O(1) performance, custom implementation  |  	More complex to implement  |
-|  ___  |  ___  |  ___  |
-
+|  Approach  |	Pros  |	Cons  | <br/>
+|  :---:  |  :---:  |  :---:  |  <br/>
+|  OrderedDict  |	Simple, built-in, optimized for LRU  |	Uses extra memory for internal ordering  |  <br/>
+|  :---:  |  :---:  |  :---:  |  <br/>
+|  DLL + HashMap  |	True O(1) performance, custom implementation  |  	More complex to implement  |  <br/>
+|  :---:  |  :---:  |  :---:  |  <br/>
