@@ -28,9 +28,9 @@ Working Principle
 ## Why Use OrderedDict?
 
 ### Advantages of OrderedDict Over Normal Dict
-✅ Maintains order of key insertion → When a key is accessed, it is moved to the end.
-✅ Fast access to the least recently used key → The first element is always the least recently used.
-✅ O(1) operations for get, put, and eviction → move_to_end and popitem ensure fast updates.
+✅ Maintains order of key insertion → When a key is accessed, it is moved to the end. <br/>
+✅ Fast access to the least recently used key → The first element is always the least recently used. <br/>
+✅ O(1) operations for get, put, and eviction → move_to_end and popitem ensure fast updates. <br/>
 
 In contrast, a normal Python dictionary (dict) does not guarantee order in older versions (<Python 3.7).
 
@@ -46,13 +46,13 @@ While OrderedDict is simple, an alternative approach is using a Doubly Linked Li
 
 ##  How This Achieves O(1) Operations?
 
-|  Operation	| Time Complexity |	Why? |
-|  ___  |  ___  |  ___  |
-|  get(key)	|  O(1)	|  HashMap lookup + moving node in DLL  |
-|  ___  |  ___  |  ___  |
-|  put(key, value) |	O(1)	|  HashMap insert + adding/removing DLL node  |
-|  ___  |  ___  |  ___  |
-|  evict LRU	|  O(1)	|  Remove first node from DLL  |
+|  Operation	| Time Complexity |	Why? | <br/>
+|  ___  |  ___  |  ___  | <br/>
+|  get(key)	|  O(1)	|  HashMap lookup + moving node in DLL  | <br/>
+|  ___  |  ___  |  ___  | <br/>
+|  put(key, value) |	O(1)	|  HashMap insert + adding/removing DLL node  | <br/>
+|  ___  |  ___  |  ___  | <br/>
+|  evict LRU	|  O(1)	|  Remove first node from DLL  | <br/>
 |  ___  |  ___  |  ___  |
 
 
