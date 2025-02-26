@@ -163,7 +163,7 @@ Google Cloud Functions use Token Bucket for API calls.
 ✅ Prevents unexpected overload on cloud functions. <br/>
 ✅ Ensures fair resource allocation across users.
 
-<br/>
+
 ##  Real-World Impact of Token Bucket
 
 🔹 Netflix & YouTube → Control video streaming API requests. <br/>
