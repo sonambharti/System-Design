@@ -1,13 +1,13 @@
 Designing a service for A/B Testing involves building a system that allows product teams to test different variants (A, B, C, etc.) of a feature and measure which one performs better based on user interactions.
 
-##  ✅ What is A/B Testing?**
+##  ✅ What is A/B Testing?
 It’s an experiment where:
 -  Users are split into groups.
 -  Each group gets a different variant of a feature/page.
 -  Their actions (clicks, conversions, etc.) are tracked.
 -  After a period, you evaluate which variant performed best.
 
-##  🧩 Requirements for A/B Testing Service**
+##  🧩 Requirements for A/B Testing Service
 **Functional Requirements:**
 -  Create Experiment
 -  Add Variants to Experiment
