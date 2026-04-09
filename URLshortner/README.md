@@ -1,4 +1,4 @@
-# URL Shortner System
+# URL Shortner System Design
 A URL shortener is an online tool that converts a long web address (URL) into a shorter, concise, and shareable link, 
 commonly used to improve readability and character limitations on social media. When clicked, the shortened link instantly 
 redirects the user to the original, long URL.
